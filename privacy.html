@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Políticas de Privacidad - Go Dates</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Main content */
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            margin: 2rem 0;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            text-align: center;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: #666;
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: #444;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        ul {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            color: #333;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .footer-notice {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .content {
+                padding: 2rem 1rem;
+                margin: 1rem 0;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        /* Smooth animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content {
+            animation: fadeInUp 0.8s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Go Dates</a>
+            <a href="index.html" class="back-link">← Volver al inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content container">
+            <h1>Políticas de Privacidad</h1>
+            <p class="last-updated"><strong>Última actualización: 14 de julio de 2025</strong></p>
+
+            <h2>1. Introducción</h2>
+            <p>Bienvenido a Go Dates ("nosotros", "nuestra" o "la aplicación"). Respetamos tu privacidad y nos comprometemos a proteger tus datos personales. Esta Política de Privacidad explica cómo recopilamos, utilizamos, compartimos y protegemos tu información cuando utilizas nuestra aplicación de citas.</p>
+
+            <h2>2. Información que Recopilamos</h2>
+            
+            <h3>2.1 Información que nos proporcionas directamente:</h3>
+            <ul>
+                <li><strong>Datos de registro</strong>: Nombre completo, fecha de nacimiento, género</li>
+                <li><strong>Información de contacto</strong>: Número de teléfono (opcional)</li>
+                <li><strong>Contenido de perfil</strong>: Videos de perfil, respuestas a quiz</li>
+                <li><strong>Información de comunicación</strong>: Mensajes y interacciones dentro de la aplicación</li>
+            </ul>
+
+            <h3>2.2 Información que recopilamos automáticamente:</h3>
+            <ul>
+                <li><strong>Datos de uso</strong>: Cómo interactúas con la aplicación</li>
+                <li><strong>Información del dispositivo</strong>: Tipo de dispositivo, sistema operativo, identificadores únicos</li>
+                <li><strong>Datos de ubicación</strong>: Ubicación aproximada para facilitar conexiones locales</li>
+                <li><strong>Cookies y tecnologías similares</strong>: Para mejorar la experiencia del usuario</li>
+            </ul>
+
+            <h2>3. Cómo Utilizamos tu Información</h2>
+            <p>Utilizamos tu información para:</p>
+            <ul>
+                <li><strong>Proporcionar el servicio</strong>: Crear y mantener tu perfil, facilitar conexiones</li>
+                <li><strong>Matchmaking</strong>: Algoritmos para sugerir conexiones compatibles</li>
+                <li><strong>Comunicación</strong>: Enviarte notificaciones sobre matches y citas</li>
+                <li><strong>Marketing y comunicaciones</strong>: Enviar correos electrónicos informativos, promocionales y actualizaciones del servicio</li>
+                <li><strong>Seguridad</strong>: Verificar identidad y prevenir fraudes</li>
+                <li><strong>Mejora del servicio</strong>: Analizar uso y mejorar funcionalidades</li>
+                <li><strong>Cumplimiento legal</strong>: Cumplir con obligaciones legales</li>
+            </ul>
+
+            <h3>3.1 Comunicaciones por correo electrónico</h3>
+            <p>Al aceptar estas políticas de privacidad, consientes específicamente a recibir comunicaciones por correo electrónico de Go Dates, incluyendo:</p>
+            <ul>
+                <li>Notificaciones sobre matches y actividad en tu perfil</li>
+                <li>Actualizaciones del servicio y nuevas funcionalidades</li>
+                <li>Consejos y contenido relacionado con citas</li>
+                <li>Promociones y ofertas especiales</li>
+                <li>Comunicaciones de seguridad y cuenta</li>
+            </ul>
+            <p>Puedes darte de baja de estas comunicaciones en cualquier momento haciendo clic en el enlace de "darse de baja" en cualquier correo electrónico o contactando directamente con nosotros.</p>
+
+            <h2>4. Base Legal para el Procesamiento</h2>
+            <p>Procesamos tus datos basándonos en:</p>
+            <ul>
+                <li><strong>Consentimiento</strong>: Cuando nos das permiso explícito</li>
+                <li><strong>Ejecución del contrato</strong>: Para proporcionar nuestros servicios</li>
+                <li><strong>Interés legítimo</strong>: Para mejorar y asegurar nuestros servicios</li>
+                <li><strong>Cumplimiento legal</strong>: Para cumplir con requisitos legales</li>
+            </ul>
+
+            <h2>5. Compartición de Información</h2>
+            
+            <h3>5.1 Con otros usuarios:</h3>
+            <ul>
+                <li>Información de perfil visible para matches potenciales</li>
+                <li>Videos de perfil y respuestas a quiz</li>
+            </ul>
+
+            <h3>5.2 Con terceros:</h3>
+            <ul>
+                <li><strong>Proveedores de servicios</strong>: Para hosting, análisis y soporte técnico</li>
+                <li><strong>Autoridades legales</strong>: Cuando sea requerido por ley</li>
+                <li><strong>Nunca vendemos</strong> tus datos personales a terceros</li>
+            </ul>
+
+            <h2>6. Seguridad de los Datos</h2>
+            <p>Implementamos medidas de seguridad técnicas y organizativas:</p>
+            <ul>
+                <li>Encriptación de datos en tránsito y en reposo</li>
+                <li>Acceso restringido a datos personales</li>
+                <li>Auditorías regulares de seguridad</li>
+                <li>Monitoreo continuo de amenazas</li>
+            </ul>
+
+            <h2>7. Retención de Datos</h2>
+            <p>Conservamos tus datos mientras:</p>
+            <ul>
+                <li>Mantengas tu cuenta activa</li>
+                <li>Sea necesario para proporcionar servicios</li>
+                <li>Sea requerido por ley</li>
+            </ul>
+            <p>Una vez eliminados, mantenemos algunos datos de forma anónima para análisis estadísticos.</p>
+
+            <h2>8. Tus Derechos</h2>
+            <p>Bajo la legislación de protección de datos, tienes derecho a:</p>
+            <ul>
+                <li><strong>Acceso</strong>: Solicitar una copia de tus datos</li>
+                <li><strong>Rectificación</strong>: Corregir información incorrecta</li>
+                <li><strong>Eliminación</strong>: Solicitar la eliminación de tus datos</li>
+                <li><strong>Portabilidad</strong>: Obtener tus datos en formato estructurado</li>
+                <li><strong>Oposición</strong>: Oponerte al procesamiento de tus datos</li>
+                <li><strong>Limitación</strong>: Solicitar la limitación del procesamiento</li>
+            </ul>
+
+            <h2>9. Cookies y Tecnologías de Seguimiento</h2>
+            <p>Utilizamos cookies para:</p>
+            <ul>
+                <li>Mantener tu sesión activa</li>
+                <li>Recordar tus preferencias</li>
+                <li>Analizar el uso de la aplicación</li>
+                <li>Proporcionar contenido personalizado</li>
+            </ul>
+            <p>Puedes gestionar las cookies a través de la configuración de tu navegador.</p>
+
+            <h2>10. Transferencias Internacionales</h2>
+            <p>Tus datos pueden ser transferidos y procesados en países fuera del Espacio Económico Europeo. Aseguramos protecciones adecuadas mediante:</p>
+            <ul>
+                <li>Cláusulas contractuales estándar</li>
+                <li>Decisiones de adecuación de la UE</li>
+                <li>Otras salvaguardas legales apropiadas</li>
+            </ul>
+
+            <h2>11. Menores de Edad</h2>
+            <p>Go Dates está destinado a usuarios mayores de 18 años. No recopilamos conscientemente información de menores de edad. Si descubrimos que hemos recopilado información de un menor, la eliminaremos inmediatamente.</p>
+
+            <h2>12. Cambios en esta Política</h2>
+            <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Te notificaremos sobre cambios significativos mediante:</p>
+            <ul>
+                <li>Notificación en la aplicación</li>
+                <li>Correo electrónico</li>
+                <li>Aviso destacado en nuestro sitio web</li>
+            </ul>
+
+            <h2>13. Contacto</h2>
+            <p>Para ejercer tus derechos o realizar consultas sobre privacidad:</p>
+            
+            <div class="contact-info">
+                <p><strong>Datos de Contacto:</strong></p>
+                <ul>
+                    <li>Email: godatesapp@gmail.com</li>
+                    <li>Dirección: [Tu dirección comercial]</li>
+                    <li>Teléfono: [Tu número de contacto]</li>
+                </ul>
+                
+                <p><strong>Delegado de Protección de Datos:</strong></p>
+                <ul>
+                    <li>Email: godatesapp@gmail.com</li>
+                </ul>
+            </div>
+
+            <h2>14. Autoridad de Control</h2>
+            <p>Tienes derecho a presentar una reclamación ante la autoridad de protección de datos competente:</p>
+            <ul>
+                <li><strong>España</strong>: Agencia Española de Protección de Datos (AEPD)</li>
+                <li>Website: www.aepd.es</li>
+                <li>Teléfono: 901 100 099</li>
+            </ul>
+
+            <h2>15. Disposiciones Específicas por Jurisdicción</h2>
+            
+            <h3>15.1 Usuarios en España:</h3>
+            <ul>
+                <li>Cumplimos con la Ley Orgánica de Protección de Datos (LOPDGDD)</li>
+                <li>Derechos adicionales según legislación española</li>
+            </ul>
+
+            <h3>15.2 Usuarios en la UE:</h3>
+            <ul>
+                <li>Cumplimos plenamente con el RGPD</li>
+                <li>Derechos específicos bajo el RGPD aplicables</li>
+            </ul>
+
+            <h2>16. Definiciones</h2>
+            <ul>
+                <li><strong>Datos Personales</strong>: Información que te identifica directa o indirectamente</li>
+                <li><strong>Procesamiento</strong>: Cualquier operación realizada con tus datos</li>
+                <li><strong>Controlador</strong>: Go Dates, quien determina el propósito del procesamiento</li>
+                <li><strong>Procesador</strong>: Terceros que procesan datos en nuestro nombre</li>
+            </ul>
+
+            <div class="footer-notice">
+                <p><strong>Esta Política de Privacidad constituye parte integral de nuestros Términos de Servicio. Al utilizar Go Dates, confirmas que has leído, entendido y aceptado esta política.</strong></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
