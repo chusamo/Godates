@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.ico">
+
     <title>GoDates - Conexiones Reales</title>
     <style>
         * {
@@ -51,13 +54,21 @@
 
         /* Hero Section */
         .hero {
-            padding: 4rem 0;
+            padding: 2rem 0;
             text-align: center;
             color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+        }
+
+        .hero-logo {
+            width: 124px;
+            height: 124px;
+            margin-bottom: 1em;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
         .hero h1 {
@@ -71,7 +82,7 @@
 
         .hero p {
             font-size: 1.2rem;
-            margin-bottom: 2rem;
+            /*margin-bottom: 2rem;*/
             opacity: 0.9;
             max-width: 600px;
             margin-left: auto;
@@ -83,13 +94,14 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin: 3rem auto;
+            margin: 0% auto;
             max-width: 1000px;
         }
 
         .feature {
             background: rgba(255, 255, 255, 0.1);
             padding: 2rem;
+            padding-top: 0px !important;
             border-radius: 15px;
             text-align: center;
             backdrop-filter: blur(10px);
@@ -257,6 +269,12 @@
                 font-size: 2.5rem;
             }
 
+            .hero-logo {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 1.5rem;
+            }
+
             .form-section {
                 padding: 2rem 1rem;
             }
@@ -290,6 +308,7 @@
 
 <body>
     <header>
+
         <nav class="container">
             <a href="#" class="logo">Go Dates</a>
         </nav>
@@ -297,6 +316,7 @@
 
     <main class="container">
         <section class="hero" id="inicio">
+            <img src="logo.png" alt="Go Dates Logo" class="hero-logo">
             <h1>Conexiones Reales</h1>
             <p>Olvídate de los chats infinitos. En Go Dates, conoces a la persona a través de videos auténticos, un quiz
                 divertido y quedadas reales. Te invitamos a un café, sin complicaciones.</p>
@@ -432,11 +452,8 @@
                     body: JSON.stringify(formData)
                 });
                 if (response.ok) {
-                    successMessage.style.display = 'block';
-                    e.target.reset();
-
-                    // Scroll to success message
-                    successMessage.scrollIntoView({ behavior: 'smooth' });
+                    // Redirect to thank you page after successful submission
+                    window.location.href = 'thankyou.html';
                 } else {
                     throw new Error('Error en la respuesta del servidor');
                 }
